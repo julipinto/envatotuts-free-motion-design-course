@@ -96,12 +96,23 @@
 	<section id="hero">
 		<div class="container">
 			<!-- Air -->
-			<video 
+			<!-- MP4 Vídeo -->
+			<!-- <video 
 				src="../assets/videos/video-2@c.mp4"
 				autoplay
 				loop
 				muted
-			></video>
+			></video> -->
+			
+			<!-- video example -->
+			<!-- 6,75 MB  MP4 (reliable, supportable) -->
+			<!-- 2,94 MB  webM (lighter) -->
+			<video autoplay muted loop>
+				<!-- if support -->
+				<source src="../assets/videos/video-3@c.webm" type="video/webm"/>
+				<!-- if no support, the fallback is -->
+				<source src="../assets/videos/video-1@c.mp4" type="video/mp4"/>
+			</video>
 
 			<header>
 				<a href="/"><img src="../assets/images/logo-l3.svg" alt="Logo"></a>
